@@ -153,7 +153,7 @@ python run_all.py
 
 Executed notebooks preserve cell outputs (figures, logs) for auditability and debugging.
 
-## R Environment & Installation
+## R Environment
 The R scripts in the repository has been tested with the following configuration:
 
 * R version 4.4.1
