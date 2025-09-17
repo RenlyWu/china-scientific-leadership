@@ -25,7 +25,7 @@ notebooks = [
     "Fig2_b_China_US_Parity_by_Lead_Pro_threshold.ipynb",
     "Fig3_China_US_parity_in_11_critical_TAs.ipynb",
     "Fig4a_China_International_Student_Budget.ipynb",
-    "Fig4b_China_International_Students_Statistics_by_Regions.ipynb",
+    "Fig4b_China_International_students_statistics_by_Regions.ipynb",
     # "FigS1_OpenAlex2023_Publication_Statistics_by_Region_Pair.ipynb",
     # "FigS22_China_US_parity_in_6_broad_fields.ipynb",
 ]
