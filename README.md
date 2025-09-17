@@ -72,13 +72,13 @@ The workflow is notebook-centric for transparency and replicability. Each notebo
 | `FigS22_China_US_parity_in_6_broad_fields.ipynb` | `pics/fig_S22_lead_share.svg`, `pics/fig_S22_lead_premium.svg` | SI S22; also SI S21 (publication statistics by fields). |
 | `HonoraryAuthorships_FigS9ab_FigS10ab.R` | `pics/FigS9a.png`, `pics/FigS9b.png`,`pics/FigS10a.png`, `pics/FigS10b.png` | Detect honorary authorships |
 | `ChineseMigrants_FigS13_FigS14.R` | `pics/fig_S13.png`, `pics/fig_S14.png` | Analyze Chinese migrant scientists |
-| `ChineseLeadershipCounterfactuals_Table1.R` | 'Table 1' | Estimate counterfactual Chinese global scientific leadership with US-China decoupling |
+| `ChineseLeadershipCounterfactuals_Table1.R` | `Table 1` | Estimate counterfactual Chinese global scientific leadership with US-China decoupling |
 
 > Filenames reflect the manuscript figure numbering. Supplementary items use `Fig. S#` and, where relevant, an `extra` variant rather than a/b subpanels.
 
 
 
-## Environment & Installation
+## Python Environment & Installation
 
 We recommend running the code in a clean Python environment (e.g., conda or venv).  
 
@@ -100,7 +100,7 @@ papermill --version
 jupyter --version
 ```
 
-### Tested environment
+### Python Tested environment
 
 The repository has been tested with the following configuration:
 
@@ -114,17 +114,17 @@ The repository has been tested with the following configuration:
 * pyarrow version: 19.0.1
 
 
-## Reproducibility & Execution
+## Python Reproducibility & Execution
 
 Each notebook can be run interactively in Jupyter **or** executed non-interactively via `papermill`.
 
-### Run a Single Notebook (command line)
+### Python Run a Single Notebook (command line)
 
 ```bash
 papermill Fig2_a_China_US_Parity_by_JIF_threshold.ipynb pics/executed_Fig2_a_China_US_Parity_by_JIF_threshold.ipynb
 ```
 
-### Run a Selected Set (driver script)
+### Python Run a Selected Set (driver script)
 
 `run_all.py` reads notebooks from the **current directory** and writes executed copies to `pics/` as `executed_*.ipynb`. Adjust the `notebooks` list in the script to control which files run and in what order.
 
@@ -133,6 +133,18 @@ python run_all.py
 ```
 
 Executed notebooks preserve cell outputs (figures, logs) for auditability and debugging.
+
+## R Environment & Installation
+The R scripts in the repository has been tested with the following configuration:
+
+* R version 4.4.1
+* Platform: aarch64-apple-darwin20
+* Running under: macOS 15.6.1
+* data.table version: 1.16.0
+* dplyr version: 1.1.4
+* fixest version: 0.12.1
+* ggplot version: 2_3.5.1
+
 
 ---
 
