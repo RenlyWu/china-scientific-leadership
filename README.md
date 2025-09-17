@@ -70,6 +70,9 @@ The workflow is notebook-centric for transparency and replicability. Each notebo
 | `Fig4b_China_International_Students_Statistics_by_Regions.ipynb` | `pics/fig_4_b.svg` | International students (2006–2018). |
 | `FigS1_OpenAlex2023_Publication_Statistics_by_Region_Pair.ipynb` | `pics/fig_S1.svg`, `pics/fig_S1_extra.svg` | Regional publication statistics and variant view. |
 | `FigS22_China_US_parity_in_6_broad_fields.ipynb` | `pics/fig_S22_lead_share.svg`, `pics/fig_S22_lead_premium.svg` | SI S22; also SI S21 (publication statistics by fields). |
+| `HonoraryAuthorships_FigS9ab_FigS10ab.R` | `pics/FigS9a.png`, `pics/FigS9b.png`,`pics/FigS10a.png`, `pics/FigS10b.png` | Detect honorary authorships |
+| `ChineseMigrants_FigS13_FigS14.R` | `pics/fig_S13.png`, `pics/fig_S14.png` | Analyze Chinese migrant scientists |
+| `ChineseLeadershipCounterfactuals_Table1.R` | 'Table 1' | Estimate counterfactual Chinese global scientific leadership with US-China decoupling |
 
 > Filenames reflect the manuscript figure numbering. Supplementary items use `Fig. S#` and, where relevant, an `extra` variant rather than a/b subpanels.
 
