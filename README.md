@@ -1,5 +1,5 @@
 # China Scientific Leadership
-Code and reproducible workflows for the PNAS paper “Shifting Power Asymmetries in Scientific Teams Reveal China’s Rising Leadership in Global Science.”
+Code and reproducible workflows for the PNAS paper “Shifting Power Asymmetries in Scientific Teams Reveal China’s Rising Leadership in Global Science.” (Sep 2025)
 
 **Authors:** Renli Wu, Christopher Esposito, James A. Evans  
 **Affiliations:** School of Information Management, Wuhan University / Knowledge Lab, University of Chicago / University of California, Los Angeles  
