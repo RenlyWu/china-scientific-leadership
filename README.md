@@ -11,7 +11,7 @@ Code and reproducible workflows for the PNAS paper “Shifting Power Asymmetries
 ## Overview
 This repository provides code and notebooks to reproduce figures and supplementary analyses for a study of **China–US scientific leadership and parity**. We quantify leadership through author-level roles and related indicators, and examine temporal and field-level patterns as well as budgetary and international student contexts.
 
-The workflow is notebook-centric for transparency and replicability. Each notebook contains a structured header describing **Purpose, Inputs, Outputs**, and **Notes**. A lightweight driver script (`run_all.py`) can execute a selected subset of notebooks in sequence.
+The workflow is notebook-centric for transparency and replicability. Each notebook contains a structured header describing **Purpose, Inputs, Outputs**, and **Notes**. A lightweight driver script (`run_all.py`) can execute the Python notebooks in sequence.
 
 ---
 
@@ -22,12 +22,28 @@ The workflow is notebook-centric for transparency and replicability. Each notebo
    - Preprocessed author–paper roles used to compute “Lead Share” and “Lead Premium”.
 
 2. **Chinese Ministry of Education (MOE) departmental budgets**  
-   - `data/China_Budget_for_International_Students.csv.gz`  
+   - `data/China_Budget_for_International_Students.csv`  
    - Annual budget allocations for international students.
 
 3. **International student statistics for China (2006–2018)**  
    - `data/China_international_student_statistics_by_regions.csv`  
    - Concise time series by region.
+  
+4. **Chinese collaboration frequencies**  
+   - `data/China_Collaboration_Frequencies.csv`  
+   - Frequencies of collaboration between Chinese scientists and scientists of other regions.
+  
+5. **Chinese Migrant Scientists**  
+   - `data/Chinese_Migrants.csv.gz`
+   - Preprocessed career panels of scientists that first publish in China, then in the US, and then again in China
+
+6. **Honorary Authorships**  
+   - `data/Honorary_Authors.csv.gz`
+   - Preprocessed career panels of scientists with measures of semantic pivot across papers in their careers
+
+7. **Honorary Authors Location Records**  
+   - `data/Honorary_Authors_Locations.csv.gz`
+   - Preprocessed geographical location data for the honorary authorship records
 
 > **Note:** Due to the large size of the raw data files, they are not tracked in Git.  
 > All datasets can be downloaded from [Zenodo](https://zenodo.org/records/17138189) and should be placed under the `data/` directory using the exact filenames specified above.
@@ -40,16 +56,19 @@ The workflow is notebook-centric for transparency and replicability. Each notebo
 ```
 
 .
-├── Fig1\_ab\_China\_Scientific\_Leadership.ipynb
-├── Fig1\_cd\_Fig4c\_China\_parity\_trend.ipynb
-├── Fig2\_a\_China\_US\_Parity\_by\_JIF\_threshold.ipynb
-├── Fig2\_b\_China\_US\_Parity\_by\_Lead\_Pro\_threshold.ipynb
-├── Fig3\_China\_US\_parity\_in\_11\_critical\_TAs.ipynb
-├── Fig4a\_China\_International\_Student\_Budget.ipynb
-├── Fig4b\_China\_International\_Students\_Statistics\_by\_Regions.ipynb
-├── FigS1\_OpenAlex2023\_Publication\_Statistics\_by\_Region\_Pair.ipynb
-├── FigS22\_China\_US\_parity\_in\_6\_broad\_fields.ipynb
-├── run\_all.py
+├── Fig1_ab_China_Scientific_Leadership.ipynb
+├── Fig1_cd_Fig4c_China_parity_trend.ipynb
+├── Fig2_a_China_US_Parity_by_JIF_threshold.ipynb
+├── Fig2_b_China_US_Parity_by_Lead_Pro_threshold.ipynb
+├── Fig3_China_US_parity_in_11_critical_TAs.ipynb
+├── Fig4a_China_International_Student_Budget.ipynb
+├── Fig4b_China_International_Students_Statistics_by_Regions.ipynb
+├── FigS1_OpenAlex2023_Publication_Statistics_by_Region_Pair.ipynb
+├── FigS22_China_US_parity_in_6_broad_fields.ipynb
+├── ChineseLeadershipCounterfactuals_Table1.R
+├── ChineseMigrants_FigS13_FigS14.R
+├── HonoraryAuthorships_FigS9ab_FigS10ab.R
+├── run_all.py
 ├── data/              # place input datasets here (not versioned)
 └── pics/              # figure outputs and executed notebooks (*.svg, executed\_*.ipynb)
 
